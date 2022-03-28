@@ -1,0 +1,20 @@
+body{
+  font-family: 'Open Sans', sans-serif;  
+  color: $white;
+}
+  
+  .menu{
+    margin-left: 40px;
+    .menu__item-list{
+      list-style-type: none;
+      .menu__item{
+        .item__link{
+          line-height: 50px;
+          text-transform: uppercase;
+          color: $white;
+          text-decoration: none;
+        }
+
+      }
+    }
+  }
