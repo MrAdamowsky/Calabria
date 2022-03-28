@@ -10,12 +10,11 @@ body{
 .header{
     width: 100vw;
     background: linear-gradient(180deg, #252525 25%, rgba(255,255,255,0) 100%);
-    padding: 20px;
+    padding: 20px 0 35px 0;
     .top-bar{
         width: 1440px;
         margin: auto;
         display: flex;
-        justify-content: center;
         .top-bar__mail{
             width: 50%;
         }
@@ -27,9 +26,24 @@ body{
 }
 
 .menu{
-    .manu__iterm-list{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    margin-left: 0%;
+    padding-left: 25px;
+    width: 20vw;  
+    height: 100vh;
+    background: linear-gradient(90deg, #252525 25%, rgba(255,255,255,0) 100%); 
+    .menu__item-list{
+        list-style-type: none;
+        margin-top: 50%;
         .menu__item{
             list-style-type: none;
         }
     }
+}
+
+.main__container{
+    margin: auto;
+    max-width: 140px;
 }

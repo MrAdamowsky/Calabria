@@ -1,2 +1,18 @@
 $primary: green;
 $white: #dfd0af;
+
+
+@mixin link{
+    color: $white;
+    text-decoration: none;
+}
+
+// GOLD GRADIENT TEXT
+
+$gold: linear-gradient(45deg, #8f6B29, #FDE08D, #DF9F28);
+
+@mixin gold{
+    background: $gold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
