@@ -1,11 +1,46 @@
-$primary: green;
-$white: #dfd0af;
+// COLORS
+
+$primary: #dfd0af;
+$dark: #272727;
+$secoundary: #a01414;
 
 
-@mixin link{
-    color: $white;
+@mixin link($color-l){
+    color: $color-l;
     text-decoration: none;
 }
+
+// Slider
+@mixin slider($url){
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),$url;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+// Main section
+
+@mixin main__headline($block-side, $shadow, $bg-color){
+    margin: 80px 0;
+    background: $bg-color;
+    box-shadow:  $shadow 8px 24px -6px rgba(255, 242, 207, 1);
+    border-radius: 10px;
+    margin-left: $block-side;
+    width: 40vw;
+    height: 80px;
+    padding: 0 50px;
+}
+
+@mixin main__headline--thypography($txt-side, $color){
+    text-align: $txt-side;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: $color;
+    line-height: 80px;
+}
+
 
 // GOLD GRADIENT TEXT
 

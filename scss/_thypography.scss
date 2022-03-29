@@ -1,6 +1,6 @@
 body{
   font-family: 'Open Sans', sans-serif;  
-  color: $white;
+  color: $primary;
 }
 h1{
   text-align: center;
@@ -9,23 +9,37 @@ h1{
   max-width: 500px;
   @include gold
 }
+.item__link{
+  @include link($primary)
+}
 .top-bar{
   text-align: center;
   .top-bar__phone-link{
-    @include link
+    @include link($primary)
   }
 }
 
-  .menu{
-    .menu__item-list{
-      .menu__item{
-        .item__link{
-          font-weight: bold;
-          line-height: 50px;
-          text-transform: uppercase;
-          @include link
-        }
-
+.menu{
+  .menu__item-list{
+    .menu__item{
+      .item__link{
+        font-weight: bold;
+        line-height: 50px;
+        text-transform: uppercase;
+        @include link($primary)
       }
     }
   }
+}
+
+.main__headline--left{
+@include main__headline--thypography(right, $dark)
+}
+.main__headline--right{
+@include main__headline--thypography(left, $dark)
+}
+
+.footer__container{
+  text-align: center;
+  line-height: 11rem;
+}
