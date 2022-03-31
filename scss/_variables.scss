@@ -1,9 +1,16 @@
 // COLORS
 
 $primary: #dfd0af;
+$disable-primary:rgba(223, 208, 175, 0.521);
 $dark: #272727;
 $secoundary: #a01414;
 
+// GOLD GRADIENT TEXT
+
+// $gold: linear-gradient(45deg, #8f6B29, #FDE08D, #DF9F28);
+// $gold: linear-gradient(0deg, rgba(162,97,57,1) 25%, rgba(213,148,108,1) 52%, rgba(162,97,57,1) 100%);
+$goldv: linear-gradient(0deg, rgba(162,97,57,1) 25%, rgba(230,165,125,1) 52%, rgba(162,97,57,1) 100%);
+$gold: linear-gradient(90deg, rgba(162,97,57,1) 25%, rgba(230,165,125,1) 52%, rgba(162,97,57,1) 100%);
 
 @mixin link($color-l){
     color: $color-l;
@@ -30,7 +37,6 @@ $secoundary: #a01414;
     height: 80px;
     padding: 0 50px;
 }
-
 @mixin main__headline--thypography($txt-side, $color){
     text-align: $txt-side;
     text-transform: uppercase;
@@ -42,12 +48,11 @@ $secoundary: #a01414;
 }
 
 
-// GOLD GRADIENT TEXT
 
-$gold: linear-gradient(45deg, #8f6B29, #FDE08D, #DF9F28);
 
 @mixin gold{
-    background: $gold;
+    // background: $gold;
+    background: $goldv;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

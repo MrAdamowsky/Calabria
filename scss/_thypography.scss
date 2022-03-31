@@ -2,10 +2,17 @@ body{
   font-family: 'Open Sans', sans-serif;  
   color: $primary;
 }
-h1{
+.logo{
   text-align: center;
   margin: auto;
   font-size: 70px;
+  max-width: 500px;
+  @include gold
+}
+.logo-xs{
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
   max-width: 500px;
   @include gold
 }
@@ -26,11 +33,27 @@ h1{
         font-weight: bold;
         line-height: 50px;
         text-transform: uppercase;
-        @include link($primary)
+        @include link($disable-primary);
+        transition: 400ms;
       }
     }
   }
 }
+.menu{
+  .menu__item-list{
+    .menu__item{
+      .item__link:hover{
+        text-decoration: underline;
+        transition: 400ms;
+        scale: 1.2;
+        letter-spacing: 2px;
+        text-shadow: 8px 3px 4px rgba(255, 242, 207, 0.5);
+        color: $primary;
+      }
+    }
+  }
+}
+
 
 .main__headline--left{
 @include main__headline--thypography(right, $dark)
@@ -42,4 +65,23 @@ h1{
 .footer__container{
   text-align: center;
   line-height: 11rem;
+}
+
+
+// RWD
+
+@media(max-width:361px){
+  body{
+    font-size: 12px;
+  }
+
+  .top-bar{
+    font-size: 12px;
+  }
+
+  .main__headline{
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+  }
 }

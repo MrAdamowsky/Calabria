@@ -1,6 +1,11 @@
+.elements-list{
+    background:$gold;
+    padding:5px 0;
+}
+
 .slider {
     position: relative;
-    background: url(../img/239208316_2974983446151871_1459184816892941367_n.jpg);
+    // background: url(../img/239208316_2974983446151871_1459184816892941367_n.jpg);
     background-size: cover;
     background-position: center center;
     display: grid;
@@ -20,6 +25,7 @@
         margin-top:0;
         text-align: center;
         font-family: 'Roboto Condensed', sans-serif;
+        background: rgba(0, 0, 0, 0.5);
     }
     .element-text {
         color:$primary;
@@ -33,7 +39,8 @@
         text-align: center;
         font-family: serif;
         font-style: italic;
-        max-width:60%;
+        max-width:100%;
+        background: rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -42,6 +49,9 @@
 }
 .slider-2{
     @include slider(url(../img/r-bake.jpg))
+}
+.slider-3{
+    @include slider(url(../img/239208316_2974983446151871_1459184816892941367_n.jpg))
 }
 
 .slider-slides-cnt {
@@ -190,4 +200,18 @@
 }
 .slider-pagination-button:focus {
     outline: none;
+}
+
+// RWD
+
+@media (max-width:361px){
+    .slider{
+        height: 400px;
+        .element-title{
+            font-size: 2rem;
+        }
+        .element-text{
+            font-size: 0.75rem;
+        }
+    }
 }
