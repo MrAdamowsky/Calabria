@@ -39,6 +39,7 @@ $gold: linear-gradient(90deg, rgba(162,97,57,1) 25%, rgba(230,165,125,1) 52%, rg
 }
 @mixin main__headline--thypography($txt-side, $color){
     text-align: $txt-side;
+    font-family: comic;
     text-transform: uppercase;
     font-size: 45px;
     font-weight: bold;

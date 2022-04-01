@@ -2,6 +2,11 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@font-face
+{
+font-family: comic;
+src:url(../font/comic-sans-ms/comici.ttf);
+}
 @import "variables";
 @import "thypography";
 @import "slider";
