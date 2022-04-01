@@ -1,6 +1,7 @@
 body{
   font-family: 'Open Sans', sans-serif;  
   color: $primary;
+  text-align: justify;
 }
 .logo{
   text-align: center;
@@ -62,6 +63,23 @@ body{
 @include main__headline--thypography(left, $dark)
 }
 
+.card__headline{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.card__txt{
+  text-align: justify;
+}
+
+.card__btn{
+  font-size: 20px;
+  text-align: center;
+  color: $dark;
+}
+
+
+
 .footer__container{
   text-align: center;
   line-height: 11rem;
@@ -70,13 +88,64 @@ body{
 
 // RWD
 
+
+
+// MD
+@media(max-width:795px){
+  body{
+    font-size: 16px;
+  }
+
+  .top-bar{
+    font-size: 18px;
+  }
+
+  .main__headline{
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .card__headline{
+    font-size: 20px;
+  }
+  .card__btn{
+    font-size: 16px;
+
+  }
+}
+
+
+// // S
+@media(max-width:576px){
+  body{
+    font-size: 14px;
+  }
+
+  .top-bar{
+    font-size: 16px;
+  }
+
+  .main__headline{
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+  }
+
+  .footer__container{
+font-size: 12px;
+}
+
+}
+
+
+// // XS
 @media(max-width:361px){
   body{
     font-size: 12px;
   }
 
   .top-bar{
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .main__headline{
@@ -84,4 +153,8 @@ body{
     line-height: 50px;
     text-align: center;
   }
+  .footer__container{
+    font-size: 10px;
+    }
+
 }

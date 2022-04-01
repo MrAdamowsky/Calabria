@@ -146,10 +146,12 @@
 .element-title {
     left:0;
     opacity:1;
+    width: 100vw;
 }
 .element-text {
     left:0;
     opacity:1;
+    
 }
 
 /* stronicowanie */
@@ -204,7 +206,52 @@
 
 // RWD
 
-@media (max-width:361px){
+// XL
+@media(max-width:1600px){
+    .slider{
+        height: 400px;
+        .element-title{
+            font-size: 4rem;
+
+        }
+        .element-text{
+            font-size: 1.25rem;
+        }
+    }
+}
+
+// MD
+
+@media (max-width:795px){
+    .slider{
+        height: 400px;
+        .element-title{
+            font-size: 2.75rem;
+
+        }
+        .element-text{
+            font-size: 1.25rem;
+        }
+    }
+}
+
+
+// // S
+@media(max-width:576px){
+    .slider{
+        height: 400px;
+        .element-title{
+            font-size: 2.5rem;
+        }
+        .element-text{
+            font-size: 1rem;
+        }
+    }
+  }
+  
+  
+  // // XS
+  @media(max-width:361px){
     .slider{
         height: 400px;
         .element-title{
@@ -214,4 +261,4 @@
             font-size: 0.75rem;
         }
     }
-}
+  }
