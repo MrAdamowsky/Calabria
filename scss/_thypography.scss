@@ -16,7 +16,8 @@ body{
   margin: auto;
   font-size: 40px;
   max-width: 500px;
-  @include gold
+  @include gold;
+  font-family: comic;
 }
 .item__link{
   @include link($primary)
