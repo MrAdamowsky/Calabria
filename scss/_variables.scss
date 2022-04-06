@@ -12,6 +12,13 @@ $secoundary: #a01414;
 $goldv: linear-gradient(0deg, rgba(162,97,57,1) 25%, rgba(230,165,125,1) 52%, rgba(162,97,57,1) 100%);
 $gold: linear-gradient(90deg, rgba(162,97,57,1) 25%, rgba(230,165,125,1) 52%, rgba(162,97,57,1) 100%);
 
+@mixin gold{
+    // background: $gold;
+    background: $goldv, center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @mixin link($color-l){
     color: $color-l;
     text-decoration: none;
@@ -50,10 +57,3 @@ $gold: linear-gradient(90deg, rgba(162,97,57,1) 25%, rgba(230,165,125,1) 52%, rg
 
 
 
-
-@mixin gold{
-    // background: $gold;
-    background: $goldv;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
