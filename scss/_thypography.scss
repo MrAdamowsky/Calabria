@@ -25,7 +25,14 @@ body{
 .top-bar{
   text-align: center;
   .top-bar__phone-link{
-    @include link($primary)
+    @include link($primary);
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  .top-bar__phone-link:hover{
+    letter-spacing: 1.5px;
+    transition: 400ms;
+    @include shadow-txt(1px, 1px, 5px);
   }
 }
 
@@ -50,7 +57,7 @@ body{
         transition: 400ms;
         scale: 1.2;
         letter-spacing: 1px;
-        text-shadow: 8px 3px 4px rgba(255, 242, 207, 0.5);
+        @include shadow-txt(8px, 3px, 4px);
         color: $primary;
       }
     }

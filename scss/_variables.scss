@@ -18,6 +18,12 @@ $gold: linear-gradient(90deg, rgba(162,97,57,1) 25%, rgba(230,165,125,1) 52%, rg
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+@mixin shadow-bg($x, $y, $b, $s){
+    box-shadow:  $x $y $b $s rgba(255, 242, 207, 1);
+}
+@mixin shadow-txt($x, $y, $b){
+    text-shadow:  $x $y $b $disable-primary;
+}
 
 @mixin link($color-l){
     color: $color-l;
@@ -34,12 +40,11 @@ $gold: linear-gradient(90deg, rgba(162,97,57,1) 25%, rgba(230,165,125,1) 52%, rg
 
 // Main section
 
-@mixin main__headline($block-side, $shadow, $bg-color){
+@mixin main__headline( $shadow, $bg-color){
     margin: 80px 0;
     background: $bg-color;
     box-shadow:  $shadow 8px 24px -6px rgba(255, 242, 207, 1);
     border-radius: 10px;
-    margin-left: $block-side;
     width: 40vw;
     height: 80px;
     padding: 0 50px;

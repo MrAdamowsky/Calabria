@@ -25,13 +25,12 @@ body{
         max-width: 1440px;
         margin: auto;
         display: flex;
-        .top-bar__mail{
-            width: 50%;
-        }
-        .top-bar__phone{
-            width: 50%;
-        }
-
+        // .top-bar__mail{
+        //     width: 50%;
+        // }
+        // .top-bar__phone{
+        //     width: 50%;
+        // }
     }
 }
 
@@ -58,9 +57,9 @@ body{
     width: 12.5vw;
     box-shadow: -4px 0 12px 6px rgba(255, 242, 207, 1);
     transition: 600ms;
-    .menu__item-list{
-        // margin-top: 50%;
-    }
+    // .menu__item-list{
+    //     // margin-top: 50%;
+    // }
 }
 
 // HAMBURGER
@@ -160,11 +159,21 @@ body{
 // END HAMBURGER
 
 .main__headline--left{
-    @include main__headline(0, 8px, $primary)
+    @include main__headline(8px, $primary);
+    margin-left: 0;
 }
 
 .main__headline--right{
-    @include main__headline(60%, -8px, $primary)
+    // @include main__headline(60%, -8px, $primary);
+    margin: 80px 0;
+    background: $primary;
+    box-shadow:  -8px 8px 24px -6px rgba(255, 242, 207, 1);
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    right: -55%;
+    width: 40%;
+    height: 80px;
+    padding: 0 0 0 5%;
 }
 .main__ofert{
   
@@ -184,15 +193,16 @@ body{
 
 .ofert__box{
     display: flex;
+    flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 5%;
+    justify-content: center;
    
 }
 
 .ofert__card{
-    width: 27%;
-    margin-left: 3%;
-    margin-right: 3%; 
+    width: 17%;
+    margin: 5% 3% 0 3%;
     background: $dark;
     border-radius: 5%;
     box-shadow: -4px 4px 24px -6px rgba(255, 242, 207, 1) ;
@@ -201,6 +211,9 @@ body{
 .ofert__card:hover{
     transform: scale(1.1,1.1);
     transition: 400ms;
+}
+.ofert__card-bunglers{
+    margin: 5% 5% 0 5%;
 }
 
 .card__txt{
@@ -323,6 +336,7 @@ body{
     }
     
     .main__headline{
+        position: static;
         background: $gold;
         margin: 80px 0;
         width: 100%;
@@ -356,8 +370,11 @@ body{
     }
     .ofert__card{
         width: 43%;
-        margin-top: 5%;
+        // margin-top: 5%;
 
+    }
+    .ofert__card-bunglers{
+        margin: 5% 3% 0 3%;
     }
 
 }
