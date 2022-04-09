@@ -49,7 +49,7 @@ body{
         text-decoration: underline;
         transition: 400ms;
         scale: 1.2;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         text-shadow: 8px 3px 4px rgba(255, 242, 207, 0.5);
         color: $primary;
       }
@@ -64,6 +64,7 @@ body{
 .main__headline--right{
 @include main__headline--thypography(left, $dark)
 }
+
 
 .card__headline{
   text-align: center;
