@@ -87,16 +87,21 @@ body{
   text-align: center;
   color: $dark;
 }
-
-
+.item__link-map--bold{
+  font-weight: bold;
+}
+.adres{
+  text-align: center;
+  font-size: 24px;
+}
 
 .footer__container{
   text-align: center;
-  line-height: 11rem;
+  line-height: 5vh;
 }
 
 
-// RWD
+// ---------------------------RWD---------------------------
 
 
 
@@ -111,7 +116,7 @@ body{
   }
 
   .main__headline{
-    font-size: 45px;
+    font-size: 40px;
     line-height: 60px;
     text-align: center;
   }
@@ -136,7 +141,7 @@ body{
   }
 
   .main__headline{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 55px;
     text-align: center;
   }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="font/fontello-0b61e991/css/fontello.css" type="text/css">
     <link rel="icon" 
     type="image/png" 
     href="img/icon3.png" />
@@ -19,7 +20,8 @@
             <h1 class="logo">Piece hybrydowe do pizzy zasilane drewnem lub gazem</h1>
         </div>
     </header>
-    
+
+<!-- MAIN MANU -->
     <nav>
         <div class="menu">
             <ul class="menu__item-list">
@@ -36,6 +38,9 @@
                 <li class="menu__item menu__item--active"><a class="item__link" href="https://www.instagram.com/piece_calabria/" target="_blank">instagram</a></li>
             </ul>
         </div>
+
+<!-- HAMBURGER -->
+
         <div class="menu-hamburger">
                 <input type="checkbox" class="menu-hamburger__input" value="checkbox" />
                     <span></span>
@@ -59,7 +64,7 @@
     </nav>
 
     <main>
-
+<!-- SLIDER -->
         <div class="elements-list" id="slider1">
             <article class="slider-1 element slider-slide-active">
                 <!-- <h2 class="element-title">
@@ -87,7 +92,7 @@
             </article>
         </div>
 
-
+<!-- MAIN -->
 
         <div class="main__container">
             <div class="main__home" id="home">
@@ -233,19 +238,28 @@
         <div class="btn card__btn">
             Sprawdź teraz 
         </div>
+        </div>
     </div>
 </div>
 <!-- Diwe mapy adresy nad mapą-->
             <h2 class="main__headline--right main__headline home__h2">gdzie jesteśmy</h2>
             <div class="main__maps" id="maps">
                 <div class="maps__content">
-                    <h3 class="maps__headline">Adresy</h3>
-                    <ul class="maps__item-list">
-                        <li class="maps__item"> <a class="item__link" href="">Produkcja: 26-200 Końskie Gracuch 25</a></li>
-                        <li class="maps__item"> <a class="item__link" href="">Zakład w budowie: 26-200 Końskie, Kornica ul.Kuźnicza 5</a></li>
-                    </ul>
+                    <div class="adres">
+                        <a class="item__link item__link-map" href=""><span class="item__link-map--bold">Produkcja: </span> 26-200 Końskie Gracuch 25</a>
+                    </div>
+                    <div class="adres adres-2">
+                        <a class="item__link item__link-map" href=""><span class="item__link-map--bold">Zakład w budowie: </span> 26-200 Końskie,<br> Kornica ul.Kuźnicza 5</a>
+                    </div>
                 </div>
-                <iframe class="maps__box" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9993.748992025829!2d20.3592538!3d51.2294417!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ae66983e37de258!2sPrzedsi%C4%99biorstwo%20Wielobran%C5%BCowe%20CALABRIA!5e0!3m2!1spl!2spl!4v1648586019195!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="container-map">
+
+                    <iframe class="maps__box" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9993.748992025829!2d20.3592538!3d51.2294417!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ae66983e37de258!2sPrzedsi%C4%99biorstwo%20Wielobran%C5%BCowe%20CALABRIA!5e0!3m2!1spl!2spl!4v1648586019195!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="adres adres-md">
+                        <a class="item__link item__link-map" href=""><span class="item__link-map--bold">Zakład w budowie: </span> 26-200 Końskie,<br> Kornica ul.Kuźnicza 5</a>
+                    </div>
+                    <iframe class="maps__box" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.287174884113!2d20.393911515932047!3d51.21378523994913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719c9fd90630479%3A0x8434d8030730b40!2sKu%C5%BAnicza%205%2C%2026-200%20Kornica!5e0!3m2!1spl!2spl!4v1649597162864!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
 
             <div class="main__contact" id="contact">
@@ -261,7 +275,6 @@
                     </div>
                 </div>
             </div>
-        </div>
 
         <a class="btn-go-up__link" href="#"><button class="btn-go-up">up</button></a>
     </main>
