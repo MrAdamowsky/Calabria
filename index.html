@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="font/fontello-0b61e991/css/fontello.css" type="text/css">
-    <link rel="icon" 
-    type="image/png" 
-    href="img/icon3.png" />
+    <link rel="icon" type="image/png" href="img/icon3.png"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <title>Calabria</title>
 </head>
 <body>
@@ -30,7 +29,7 @@
                 <li class="menu__item menu__item--active"><a class="item__link" href="#shop-furnances">Nasze piece</a></li>
                 <li class="menu__item menu__item--active"><a class="item__link" href="#shop-burners">Palniki do pieców</a></li>
                 <li class="menu__item menu__item--active"><a class="item__link" href="#shop-bunglers">Mieszalniki do ciasta</a></li>
-                <li class="menu__item menu__item--active"><a class="item__link" href="shop-Gmetal">Narzędzia Gmetal</a></li>
+                <li class="menu__item menu__item--active"><a class="item__link" href="#shop-gmetal">Narzędzia Gmetal</a></li>
                 <!-- baner przesówny -->
                 <li class="menu__item menu__item--active"><a class="item__link" href="#maps">gdzie jesteśmy</a></li>
                 <li class="menu__item menu__item--active"><a class="item__link" href="#contact">Kontakt</a></li>
@@ -52,7 +51,7 @@
                     <li class="menu__item menu__item--active"><a class="item__link" href="#shop-furnances">Nasze piece</a></li>
                     <li class="menu__item menu__item--active"><a class="item__link" href="#shop-burners">Palniki do pieców</a></li>
                     <li class="menu__item menu__item--active"><a class="item__link" href="#shop-bunglers">Mieszalniki do ciasta</a></li>
-                    <li class="menu__item menu__item--active"><a class="item__link" href="shop-Gmetal">Narzędzia Gmetal</a></li>
+                    <li class="menu__item menu__item--active"><a class="item__link" href="#shop-gmetal">Narzędzia Gmetal</a></li>
                     <!-- baner przesówny -->
                     <li class="menu__item menu__item--active"><a class="item__link" href="#maps">gdzie jesteśmy</a></li>
                     <li class="menu__item menu__item--active"><a class="item__link" href="#contact">Kontakt</a></li>
@@ -94,7 +93,7 @@
 
 <!-- MAIN -->
 
-        <div class="main__container">
+        <article class="main__container">
             <div class="main__home" id="home">
                 <h2 class="main__headline--left main__headline home__h2">o nas</h2>
                 <section class="main__section home__section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione voluptatem perferendis consequatur quam cumque hic. Nulla facilis modi ducimus reiciendis recusandae officia harum. Perferendis esse unde tempora. Ut aperiam magnam, alias dolorem nemo vitae dolorum nobis quas esse, explicabo obcaecati culpa maxime molestias accusantium maiores earum facere laudantium exercitationem eius incidunt ab tempora, id cum. Sint similique error natus laboriosam suscipit, ullam ex eaque inventore vel repudiandae quaerat dolorum eum corporis explicabo, ea iusto quos tempora consequuntur distinctio perferendis nemo voluptate! Blanditiis cum assumenda et dolores necessitatibus in officiis sunt repellendus, distinctio modi, fugiat aliquid, quae expedita illum est eaque deleniti perspiciatis obcaecati earum eos quibusdam. Ullam tempore at est dignissimos hic nulla expedita accusamus nemo saepe eius laboriosam, quidem magnam! Tempore omnis quam quidem corrupti eos perferendis cumque repudiandae facilis est quisquam saepe dicta deserunt quia id rem, vel distinctio numquam cum, neque reprehenderit esse dolorum. Veniam, eos! Unde esse non rem adipisci. Esse, aperiam soluta laudantium commodi iusto repellendus reprehenderit at impedit labore, nihil ratione cumque reiciendis veniam tempora totam doloribus animi magni error sequi! Perspiciatis culpa nesciunt, nostrum ipsa eos quasi veritatis, vero, voluptates id quibusdam assumenda fuga consequatur recusandae harum adipisci. Tenetur reprehenderit delectus tempore dicta voluptatibus, eius animi blanditiis doloribus explicabo numquam sunt veniam expedita nisi qui ea debitis repellendus commodi earum magni, facilis illo ad nobis sed. Eum porro temporibus, dolor inventore ducimus natus aliquid autem aperiam vitae et voluptas officiis voluptate ab recusandae velit quibusdam hic possimus laudantium qui consectetur sequi unde dolorum?</section>
@@ -106,7 +105,7 @@
                 <div class="gallery__btn">zobacz więcej</div>
             </div>
 <!-- furnances -->
-            <div class="main__ofert" id="shop-furnances">
+            <section class="main__ofert" id="shop-furnances">
                 <h2 class="main__headline--left main__headline home__h2">oferta pieców</h2>
                 
                 <div class="ofert__box">
@@ -146,9 +145,9 @@
                     </div>
                     </div>
                 </div>
-            </div>
+            </section>
 <!-- burners -->
-            <div class="main__ofert" id="shop-burners">
+            <section class="main__ofert" id="shop-burners">
                 <h2 class="main__headline--left main__headline home__h2 main__headline--2line">palniki gazowe avanzini</h2>
                 
                 <div class="ofert__box">
@@ -188,59 +187,163 @@
                     </div>
                     </div>
                 </div>
-            </div>
+            </section>
 <!-- bunglers -->
 
-<div class="main__ofert" id="shop-bunglers">
-    <h2 class="main__headline--left main__headline home__h2">oferta mieszalników</h2>
-    
-    <div class="ofert__box">
-        <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
-            <div class="card__headline"><h3>SV5 VV</h3></div>
-            <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
-            </div>
-        <div class="btn card__btn">
-            Sprawdź teraz
-        </div>
-        </div>
-        
-        <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
-            <div class="card__headline"><h3>SV12 VV</h3></div>
-            <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
-            </div>
-        <div class="btn card__btn">
-            Sprawdź teraz 
-        </div>
-        </div>
-        
-        <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
-            <div class="card__headline"><h3>SV25 2 speed</h3></div>
-            <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
-            </div>
-        <div class="btn card__btn">
-            Sprawdź teraz
-        </div>
-        </div>
+            <section class="main__ofert" id="shop-bunglers">
+                <h2 class="main__headline--left main__headline home__h2">oferta mieszalników</h2>
+                
+                <div class="ofert__box">
+                    <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                        <div class="card__headline"><h3>SV5 VV</h3></div>
+                        <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                        </div>
+                    <div class="btn card__btn">
+                        Sprawdź teraz
+                    </div>
+                    </div>
+                    
+                    <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                        <div class="card__headline"><h3>SV12 VV</h3></div>
+                        <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                        </div>
+                    <div class="btn card__btn">
+                        Sprawdź teraz 
+                    </div>
+                    </div>
+                    
+                    <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                        <div class="card__headline"><h3>SV25 2 speed</h3></div>
+                        <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                        </div>
+                    <div class="btn card__btn">
+                        Sprawdź teraz
+                    </div>
+                    </div>
 
-        <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
-            <div class="card__headline"><h3>SV44 2 speed</h3></div>
-            <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
-            </div>
-        <div class="btn card__btn">
-            Sprawdź teraz 
-        </div>
-        </div>
+                    <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                        <div class="card__headline"><h3>SV44 2 speed</h3></div>
+                        <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                        </div>
+                    <div class="btn card__btn">
+                        Sprawdź teraz 
+                    </div>
+                    </div>
 
-        <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
-            <div class="card__headline"><h3>SV60 2 speed</h3></div>
-            <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
-            </div>
-        <div class="btn card__btn">
-            Sprawdź teraz 
-        </div>
-        </div>
-    </div>
-</div>
+                    <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                        <div class="card__headline"><h3>SV60 2 speed</h3></div>
+                        <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                        </div>
+                    <div class="btn card__btn">
+                        Sprawdź teraz 
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+<!-- Gemtal -->
+
+            <section class="main__ofert splide" id="shop-gmetal">
+                <h2 class="main__headline--left main__headline home__h2">Gmetal</h2>
+                
+                <!-- <div class="ofert__box">
+                    <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                        <div class="card__headline"><h3>SV5 VV</h3></div>
+                        <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                        </div>
+                    <div class="btn card__btn">
+                        Sprawdź teraz
+                    </div>
+                    </div>
+                    
+                    <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                        <div class="card__headline"><h3>SV12 VV</h3></div>
+                        <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                        </div>
+                    <div class="btn card__btn">
+                        Sprawdź teraz 
+                    </div>
+                    </div>
+                    
+                    <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                        <div class="card__headline"><h3>SV25 2 speed</h3></div>
+                        <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                        </div>
+                    <div class="btn card__btn">
+                        Sprawdź teraz
+                    </div>
+                    </div>
+
+                    <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                        <div class="card__headline"><h3>SV44 2 speed</h3></div>
+                        <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                        </div>
+                    <div class="btn card__btn">
+                        Sprawdź teraz 
+                    </div>
+                    </div>
+
+                    <div class="ofert__card ofert__card-bunglers"><img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                        <div class="card__headline"><h3>SV60 2 speed</h3></div>
+                        <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                        </div>
+                    <div class="btn card__btn">
+                        Sprawdź teraz 
+                    </div>
+                    </div>
+                </div> -->
+
+                <div>
+                    <ul class="splide__list" id="lightSlider">
+                    <li class="ofert__card">
+                            <img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                            <div class="card__headline"><h3>SV60 2 speed</h3></div>
+                            <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                            </div>
+                        <div class="btn card__btn">
+                            Sprawdź teraz 
+                        </div>
+                    </li>
+                    <li class="ofert__card">
+                            <img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                            <div class="card__headline"><h3>SV60 2 speed</h3></div>
+                            <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                            </div>
+                        <div class="btn card__btn">
+                            Sprawdź teraz 
+                        </div>
+                    </li>
+                    <li class="ofert__card">
+                            <img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                            <div class="card__headline"><h3>SV60 2 speed</h3></div>
+                            <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                            </div>
+                        <div class="btn card__btn">
+                            Sprawdź teraz 
+                        </div>
+                    </li>
+                    <li class="ofert__card">
+                            <img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                            <div class="card__headline"><h3>SV60 2 speed</h3></div>
+                            <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                            </div>
+                        <div class="btn card__btn">
+                            Sprawdź teraz 
+                        </div>
+                    </li>
+                    <li class="ofert__card">
+                            <img class="card__img" src="img/no-image-found-360x260.png" alt="zdjęcie pieca">
+                            <div class="card__headline"><h3>SV60 2 speed</h3></div>
+                            <div class="card__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nostrum repellendus praesentium eligendi, culpa quasi porro! Quidem earum maxime dolore?
+                            </div>
+                        <div class="btn card__btn">
+                            Sprawdź teraz 
+                        </div>
+                    </li>
+                    </ul>
+              </div>
+            </section>
+        </article>        
 <!-- Diwe mapy adresy nad mapą-->
             <h2 class="main__headline--right main__headline home__h2">gdzie jesteśmy</h2>
             <div class="main__maps" id="maps">
@@ -276,15 +379,16 @@
                 </div>
             </div>
 
-        <a class="btn-go-up__link" href="#"><button class="btn-go-up">up</button></a>
-    </main>
+            <a class="btn-go-up__link" href="#"><button class="btn-go-up">up</button></a>
+            </main>
 
-    <footer>
-        <div class="footer__container">
-            &copy; strona w użytku 2022r. - <div id="year" style="display: inline;"></div>r. Administrator strony A.Boczek
-        </div>
-    </footer>
+            <footer>
+                <div class="footer__container">
+                    &copy; strona w użytku 2022r. - <sapn id="year" style="display: inline;"></span>r. Administrator strony A.Boczek
+                </div>
+            </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/light-slider.js"></script>
 </body>
 </html>

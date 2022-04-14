@@ -97,6 +97,18 @@ class Slider {
 }
 const slide = new Slider("#slider1");
 
+
+// Slider produktów
+
+var splide = new Splide( '.splide', {
+    type   : 'loop',
+    perPage: 3,
+    focus  : 'center',
+  } );
+  
+  splide.mount();
+
+
 // Data w stopce
 
 let today = new Date();
